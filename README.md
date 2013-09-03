@@ -1,4 +1,4 @@
-# [Spider's Web v1.0.0](http://markquery.com) 
+# [Spider's Web](http://markquery.com) 
 
 MARKQUERY Skeleton For Tistory with Bootstrap 3
 
