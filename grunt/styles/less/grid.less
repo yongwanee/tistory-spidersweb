@@ -1,0 +1,141 @@
+//
+// Grid system
+// --------------------------------------------------
+
+
+// Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
+
+.container {
+  .container-fixed();
+
+  @media (min-width: @screen-sm-min) {
+    width: @container-sm;
+  }
+  @media (min-width: @screen-md-min) {
+    width: @container-md;
+  }
+  @media (min-width: @screen-lg-min) {
+    width: @container-lg;
+  }
+}
+// custom layouts 
+.container-520, .container-620, .container-720, .container-860, .container-980, .container-1600, .custom-layout {
+  .container-fixed();
+}
+@media (min-width: @screen-sm-min) {
+  .container-520, .container-620, .container-720, .container-860, .container-980, .container-1600, .custom-layout { 
+    width: @container-sm; 
+  }
+}
+@media (min-width: @screen-md-min) {
+  .container-520 { width: 520px; }
+  .container-620 { width: 620px; }
+  .container-720 { width: 720px; }
+  .container-860 { width: 860px; }
+  .container-980 { width: 970px; }
+  .container-1600 { width: 970px; }
+  .custom-layout { width: 920px; }
+}
+@media (min-width: @screen-lg-min) {
+  .container-520 { width: 520px; }
+  .container-620 { width: 620px; }
+  .container-720 { width: 720px; }
+  .container-860 { width: 860px; }
+  .container-980 { width: 980px; }
+  .container-1600 { width: 1600px; }
+  .custom-layout { width: 920px; }
+}
+
+// Fluid container
+//
+// Utilizes the mixin meant for fixed width containers, but without any defined
+// width for fluid, full width layouts.
+
+.container-fluid {
+  .container-fixed();
+}
+// wrapper without padding and margin
+.wrapper {
+  .make-wrapper();
+}
+
+// Row
+//
+// Rows contain and clear the floats of your columns.
+
+.row {
+  .make-row();
+}
+.row-nospace {
+  .make-row-nospace();
+}
+
+// Columns
+//
+// Common styles for small and large grid columns
+
+.make-grid-columns();
+
+// without padding
+.make-grid-nospace-columns();
+
+// columns without padding
+.col-nospace [class*="col"] {
+  position: relative; 
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+// Extra small grid
+//
+// Columns, offsets, pushes, and pulls for extra small devices like
+// smartphones.
+
+.make-grid-columns-float(xs);
+.make-grid(@grid-columns, xs, width);
+.make-grid(@grid-columns, xs, pull);
+.make-grid(@grid-columns, xs, push);
+.make-grid(@grid-columns, xs, offset);
+
+
+// Small grid
+//
+// Columns, offsets, pushes, and pulls for the small device range, from phones
+// to tablets.
+
+@media (min-width: @screen-sm-min) {
+  .make-grid-columns-float(sm);
+  .make-grid(@grid-columns, sm, width);
+  .make-grid(@grid-columns, sm, pull);
+  .make-grid(@grid-columns, sm, push);
+  .make-grid(@grid-columns, sm, offset);
+}
+
+
+// Medium grid
+//
+// Columns, offsets, pushes, and pulls for the desktop device range.
+
+@media (min-width: @screen-md-min) {
+  .make-grid-columns-float(md);
+  .make-grid(@grid-columns, md, width);
+  .make-grid(@grid-columns, md, pull);
+  .make-grid(@grid-columns, md, push);
+  .make-grid(@grid-columns, md, offset);
+}
+
+
+// Large grid
+//
+// Columns, offsets, pushes, and pulls for the large desktop device range.
+
+@media (min-width: @screen-lg-min) {
+  .make-grid-columns-float(lg);
+  .make-grid(@grid-columns, lg, width);
+  .make-grid(@grid-columns, lg, pull);
+  .make-grid(@grid-columns, lg, push);
+  .make-grid(@grid-columns, lg, offset);
+}
