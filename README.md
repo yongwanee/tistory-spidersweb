@@ -7,17 +7,18 @@
 - [Download](https://github.com/markquery/tistory-spidersweb/archive/master.zip)  the zip file.
    `https://github.com/markquery/tistory-spidersweb/archive/master.zip`
 
--  or Clone the git repo — git clone
-   `https://github.com/markquery/tistory-spidersweb.git`
+-  or Clone the git repo — `git clone https://github.com/markquery/tistory-spidersweb.git`
 
 - Check the [Releases](https://github.com/markquery/tistory-spidersweb/releases)
+
+- Read the [Document](http://markquery.com/category/docs/)
 
 ## Live Demo 
 
 - Spider's Web [http://markquery-spidersweb3.tistory.com/](http://markquery-spidersweb3.tistory.com/)
 - Doo Be Doo [http://markquery-doobedoo3.tistory.com/](http://markquery-doobedoo3.tistory.com/)
 
-	Hosted on [Daum](http://daum.net/) Powered by [Tistory](http://tistory.com/) 
+	Powered by [Tistory](http://tistory.com/) 
 
 ## Versioning
 
