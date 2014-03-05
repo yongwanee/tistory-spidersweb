@@ -529,6 +529,12 @@ ul.pagination .interword {
   color:#fff;
   text-decoration: none;  
 }
+.widget-inline-inner h3 {
+  margin:10px 0;
+  font-size:1.5em;
+  font-weight: bold;
+  color:#999;
+}
 
 /* widget feed
 -------------------------------------------------- */
