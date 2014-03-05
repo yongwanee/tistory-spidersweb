@@ -1,4 +1,4 @@
-# [Tistory - Spider's Web](http://markquery.com) 
+# Tistory - Spider's Web
 
 [http://markquery.com](http://markquery.com)
 
@@ -17,7 +17,7 @@
 - Spider's Web [http://markquery-spidersweb3.tistory.com/](http://markquery-spidersweb3.tistory.com/)
 - Doo Be Doo [http://markquery-doobedoo3.tistory.com/](http://markquery-doobedoo3.tistory.com/)
 
-Hosted by [Daum](http://daum.net/) powered by [Tistory](http://tistory.com/) 
+	Hosted on [Daum](http://daum.net/) Powered by [Tistory](http://tistory.com/) 
 
 ## Versioning
 
