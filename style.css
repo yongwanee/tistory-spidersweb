@@ -760,7 +760,7 @@ max-width: 100% !important;
   border-bottom:1px dotted #999;
 }
 
-/* Small devices < 767px
+/* Small devices < 768px
 ------------------------- */
 @media screen and (max-width: 767px) {
   /* Remove any padding from the body */
