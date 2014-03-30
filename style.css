@@ -782,8 +782,8 @@ max-width: 100% !important;
   .mid-content  {
     border: none;
   }
-  .skeleton,
-  .skeleton-mid-banner { padding: 0 15px; }
+  .skeleton { padding: 0 15px; }
+  .skeleton-mid-banner { padding: 50px 15px 0; }
   .skeleton-content {
     min-height:200px;
   }
