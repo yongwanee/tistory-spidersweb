@@ -1,3 +1,23 @@
+# v3.0.4 (April 1, 2014)
+
+
+## CSS
+* 스켈레톤의 중요 모바일 미디어쿼리 767px로 수정 https://github.com/markquery/tistory-spidersweb/commit/a971373c50e36263ec9b7103879423241551c6bd 
+	> @media screen and (max-width: 767px) 
+* 모바일에서 nav와 header 겹치는 오류 수정 `.skeleton-mid-banner`에 padding-top: `50px` 추가 https://github.com/markquery/tistory-spidersweb/commit/e74835eaa99808ed5c69c908ad7b62b6387d1e75
+* `.skeleton-aside` 오타 수정 https://github.com/markquery/tistory-spidersweb/commit/4cbad7429981ad9644f6a666bc429714cd488dfc
+* font-family는 `나눔고딕`을 기본으로 변경하고, 애플 유저가 나눔고딕이 없을 시에는 `애플 SD 고딕 Neo`으로 설정. 두 글꼴이 모두 없을 경우에는 `돋움`
+	> @font-family-korean: "나눔고딕", NanumGothic, 'Apple SD Gothic Neo', "돋움", dotum, Arial, sans-serif;
+
+## HTML
+* write 글쓰기 버튼 추가 https://github.com/markquery/tistory-spidersweb/commit/ca07da97485763f8f65f18763d0eef47063836d8
+
+## script 
+* 티스토리 에디터의 각주 기능을 사용할 수 있습니다. 의미 없는 앵커 사용 방지를 위한 스크립트 수정. thx bluenlive님 
+	> 콘텐츠 본문에만 사용됩니다. `.entry-content [href=#]` 
+* `/dist` 폴더에 bootstrap의 모든 자바스크립트를 포함하고 있는 파일명 app.js로 변경 
+
+
 # v3.0.3 (March 14, 2014)
 alt 속성 수정
 
