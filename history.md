@@ -1,6 +1,5 @@
 # v3.0.4 (April 1, 2014)
 
-
 ## CSS
 * 스켈레톤의 중요 모바일 미디어쿼리 767px로 수정 https://github.com/markquery/tistory-spidersweb/commit/a971373c50e36263ec9b7103879423241551c6bd 
 	> @media screen and (max-width: 767px) 
@@ -10,13 +9,18 @@
 	> @font-family-korean: "나눔고딕", NanumGothic, 'Apple SD Gothic Neo', "돋움", dotum, Arial, sans-serif;
 
 ## HTML
+* 소셜 글보내기 버튼 IE9 이하 오류 수정 thx 쫄이님
 * write 글쓰기 버튼 추가 https://github.com/markquery/tistory-spidersweb/commit/ca07da97485763f8f65f18763d0eef47063836d8
 
 ## script 
 * 티스토리 에디터의 각주 기능을 사용할 수 있습니다. 의미 없는 앵커 사용 방지를 위한 스크립트 수정. thx bluenlive님 
-	> 콘텐츠 본문에만 사용됩니다. `.entry-content [href=#]` 
+> 콘텐츠 본문에만 사용됩니다. `.entry-content [href=#]` 
+``` css
+sup.footnote { 
+position:static;
+vertical-align:super;
+} ```
 * `/dist` 폴더에 bootstrap의 모든 자바스크립트를 포함하고 있는 파일명 app.js로 변경 
-
 
 # v3.0.3 (March 14, 2014)
 alt 속성 수정
