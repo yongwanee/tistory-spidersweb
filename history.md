@@ -1,16 +1,29 @@
 # v3.0.4 (April 1, 2014)
 
+## bootstrap 
+유저의 커스터마이징 편의를 위해 프레임워크 bootstrap의 의존도를 낮추는 작업이 계속 진행되었습니다. 이 과정에서 style.css 파일의 코드는 다소 늘어났지만, 전체 CSS의 용량은 매우 많이 줄어들었습니다. bootstrap의 모든 CSS와 JavaScript의 기능을 추가할 유저는 /dist 폴더의 bootstrap.css와 app.js 파일을 사용하시면 됩니다. 하지만 모든 기능을 사용하지 않는다면 불필요한 코드까지 방문자들에게 로딩을 하게 만듭니다. 사용하고자 하는 기능만 추가하기를 권해드리며, [grunt](http://markquery.com/docs/installing-git-and-nodejs-and-grunt/)를 실행하시기 바랍니다.   
+
+* `@import "component-animations.less";` 추가 
+* `@import "button-groups.less";` 제외 
+* `@import "list-group.less";` 제외 
+
 ## CSS
 * 스켈레톤의 중요 모바일 미디어쿼리 767px로 수정 https://github.com/markquery/tistory-spidersweb/commit/a971373c50e36263ec9b7103879423241551c6bd 
-	> @media screen and (max-width: 767px) 
+> @media screen and (max-width: 767px) 
 * 모바일에서 nav와 header 겹치는 오류 수정 `.skeleton-mid-banner`에 padding-top: `50px` 추가 https://github.com/markquery/tistory-spidersweb/commit/e74835eaa99808ed5c69c908ad7b62b6387d1e75
+* 내비게이션의 서브메뉴 `display:none`을 `text-indent: -9999px;`로 변경 
+
+* `.mid-content`에 line-height: 3 추가하고 `.social-group` 삭제
+
 * `.skeleton-aside` 오타 수정 https://github.com/markquery/tistory-spidersweb/commit/4cbad7429981ad9644f6a666bc429714cd488dfc
 * font-family는 `나눔고딕`을 기본으로 변경하고, 애플 유저가 나눔고딕이 없을 시에는 `애플 SD 고딕 Neo`으로 설정. 두 글꼴이 모두 없을 경우에는 `돋움`
-	> @font-family-korean: "나눔고딕", NanumGothic, 'Apple SD Gothic Neo', "돋움", dotum, Arial, sans-serif;
+> @font-family-korean: "나눔고딕", NanumGothic, 'Apple SD Gothic Neo', "돋움", dotum, Arial, sans-serif;
+* `.svgicon`에 text-indent: -9999px; 추가 
 
 ## HTML
 * 소셜 글보내기 버튼 IE9 이하 오류 수정 thx 쫄이님
 * write 글쓰기 버튼 추가 https://github.com/markquery/tistory-spidersweb/commit/ca07da97485763f8f65f18763d0eef47063836d8
+* 글꼴 변환에 `나눔바른고딕` 추가. 영어를 위한 글꼴 변환은 제외하며, 기존의 코드는 /test 폴더에 포함
 
 ## script 
 * 티스토리 에디터의 각주 기능을 사용할 수 있습니다. 의미 없는 앵커 사용 방지를 위한 스크립트 수정. thx bluenlive님 
