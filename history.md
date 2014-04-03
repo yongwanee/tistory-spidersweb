@@ -42,15 +42,21 @@
 ## script 
 * 티스토리 에디터의 각주 기능을 사용할 수 있습니다. 의미 없는 앵커 사용 방지를 위한 스크립트 수정. thx bluenlive님 
 
-``` javascript 
-//콘텐츠 본문에만 사용됩니다. 
-.entry-content [href=#] ```
+JavaScript:
+
+``` javascript
+// 콘텐츠 본문에만 사용됩니다
+$(".entry-content [href=#]").click(function(e) {
+```
+
+css:
 
 ``` css
 sup.footnote { 
 position:static;
 vertical-align:super;
-} ```
+} 
+```
 
 * `/dist` 폴더에 bootstrap의 모든 자바스크립트를 포함하고 있는 파일명 app.js로 변경 
 
