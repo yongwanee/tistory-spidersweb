@@ -29,6 +29,7 @@
 * `.svgicon`에 text-indent: -9999px; 추가 
 * `.social-svgicon` 삭제, `.svgicon`으로 통합
 * `.scrollup` 모든 디바이스에서 출력, 클릭 가능. 미디어쿼리 767px 이하에서는 bottom: 40px; right: 0; 
+* bootstrap의 list-inline에 
 
 ## HTML
 * 소셜 글보내기 버튼 IE9 이하 오류 수정 thx 쫄이님
@@ -43,8 +44,7 @@
 
 ``` javascript 
 //콘텐츠 본문에만 사용됩니다. 
-.entry-content [href=#]
-```
+.entry-content [href=#] ```
 
 ``` css
 sup.footnote { 
