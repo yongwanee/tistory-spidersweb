@@ -7,32 +7,51 @@
 * `@import "button-groups.less";` 제외 
 * `@import "list-group.less";` 제외 
 
+## skeleton 
+
+* Doo Be Doo는 게시트북 페이지와 개별 포스팅 댓글 부분에 container로 감싸주어 가운데 정렬
+
 ## CSS
 * 스켈레톤의 중요 모바일 미디어쿼리 767px로 수정 https://github.com/markquery/tistory-spidersweb/commit/a971373c50e36263ec9b7103879423241551c6bd 
-> @media screen and (max-width: 767px) 
+
+> @media screen and (max-width: 767px) { }
+
 * 모바일에서 nav와 header 겹치는 오류 수정 `.skeleton-mid-banner`에 padding-top: `50px` 추가 https://github.com/markquery/tistory-spidersweb/commit/e74835eaa99808ed5c69c908ad7b62b6387d1e75
 * 내비게이션의 서브메뉴 `display:none`을 `text-indent: -9999px;`로 변경 
-
-* `.mid-content`에 line-height: 3 추가하고 `.social-group` 삭제
+* `.mid-content`에 line-height:2  추가하고 `.social-group` 삭제
+* `.btn-mq`를 `.btn-none`로 변경 
 
 * `.skeleton-aside` 오타 수정 https://github.com/markquery/tistory-spidersweb/commit/4cbad7429981ad9644f6a666bc429714cd488dfc
 * font-family는 `나눔고딕`을 기본으로 변경하고, 애플 유저가 나눔고딕이 없을 시에는 `애플 SD 고딕 Neo`으로 설정. 두 글꼴이 모두 없을 경우에는 `돋움`
+
 > @font-family-korean: "나눔고딕", NanumGothic, 'Apple SD Gothic Neo', "돋움", dotum, Arial, sans-serif;
+
 * `.svgicon`에 text-indent: -9999px; 추가 
+* `.social-svgicon` 삭제, `.svgicon`으로 통합
+* `.scrollup` 모든 디바이스에서 출력, 클릭 가능. 미디어쿼리 767px 이하에서는 bottom: 40px; right: 0; 
 
 ## HTML
 * 소셜 글보내기 버튼 IE9 이하 오류 수정 thx 쫄이님
+* mid-banner 부분 HTML 수정 및 ARIA 추가 
 * write 글쓰기 버튼 추가 https://github.com/markquery/tistory-spidersweb/commit/ca07da97485763f8f65f18763d0eef47063836d8
 * 글꼴 변환에 `나눔바른고딕` 추가. 영어를 위한 글꼴 변환은 제외하며, 기존의 코드는 /test 폴더에 포함
 
+* `.btn-mq` 선택자 `.btn-none`로 변경
+
 ## script 
 * 티스토리 에디터의 각주 기능을 사용할 수 있습니다. 의미 없는 앵커 사용 방지를 위한 스크립트 수정. thx bluenlive님 
-> 콘텐츠 본문에만 사용됩니다. `.entry-content [href=#]` 
+
+``` javascript 
+//콘텐츠 본문에만 사용됩니다. 
+.entry-content [href=#]
+```
+
 ``` css
 sup.footnote { 
 position:static;
 vertical-align:super;
 } ```
+
 * `/dist` 폴더에 bootstrap의 모든 자바스크립트를 포함하고 있는 파일명 app.js로 변경 
 
 # v3.0.3 (March 14, 2014)
