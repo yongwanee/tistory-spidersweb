@@ -1,5 +1,7 @@
 # Tistory - Spider's Web
 
+[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/) [![Build Status](https://travis-ci.org/markquery/tistory-spidersweb.png)](https://travis-ci.org/markquery/tistory-spidersweb) [![devDependency Status](https://david-dm.org/markquery/tistory-spidersweb/dev-status.png?theme=shields.io)](https://david-dm.org/markquery/tistory-spidersweb#info=devDependencies)
+
 [http://markquery.com](http://markquery.com)
 
 ## Getting Started
