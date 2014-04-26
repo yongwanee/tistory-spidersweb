@@ -18,7 +18,7 @@ body {
   background-color: #f8f8f8;
 }
 .skeleton {
-  padding: 0 20px;
+  *padding: 0 20px;
   border:1px solid #ccc;
   background-color:#fff;
 }
@@ -42,7 +42,7 @@ body {
   display:block;
 }
 .skeleton-mid-banner { 
-  padding: 0 20px;
+  *padding: 0 20px;
   border-left:1px solid #ccc;
   border-right:1px solid #ccc;
   background-color:#fff;
