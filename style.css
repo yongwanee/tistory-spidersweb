@@ -75,13 +75,13 @@ body {
 .nav ul,
 .nav ul li,
 .nav a.nav-brand {
-  display: inline-block;
-  *display: inline;
-  *height: auto; 
-  zoom: 1;
+  float:left;
   vertical-align: middle;
 }
 .nav a.nav-brand  {
+  height:50px;
+  *height: auto; 
+  padding:15px 20px;
   margin-right: 0.5em;
   color: #999;
   font-size: 90%;
@@ -109,6 +109,7 @@ body {
   left:auto;
 }
 .nav ul li ul li  {
+  float:none;
   display:block;
 }
 .nav ul li ul li a {
@@ -138,6 +139,9 @@ body {
   top: 0;
   left: 0;
   right: 0;
+}
+ul.nav-right {
+ float:right;
 }
 
 /* site cover
@@ -963,7 +967,8 @@ max-width: 100%!important;
   }
   .nav ul,
   .nav ul li,
-  .nav > a.nav-brand  {
+  .nav a.nav-brand  {
+    float:none;
     display:block;
     border: none;
     background: transparent;
@@ -995,13 +1000,13 @@ max-width: 100%!important;
     background: transparent;
     vertical-align: middle;
   }
-  .nav ul li ul li a:before {  content:"›"; padding-right:10px;}
+  .nav ul li ul li a:before {  content:"›"; padding-right:5px;}
   .nav ul li ul li a:hover {
     color:#eee;
     background:#333;
     text-decoration:none;
   }
-  .nav > a.nav-brand {
+  .nav a.nav-brand {
     display:block;
     padding: 1em;
     margin:0;
@@ -1020,5 +1025,8 @@ max-width: 100%!important;
       top: none;
       left: none;
       right: none;
+  }
+  ul.nav-right {
+   float:none;
   }
 }
