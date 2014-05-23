@@ -662,6 +662,9 @@ a:hover.kakaostory-link { background-color:#ccc; border-left:1px solid #fff;}
 .txc-emo,.entry-ccl-by,.entry-ccl-nc,.entry-ccl-nd {
 display: inline-block !important;
 }
+.txc-table {
+width:100%;
+}
 .entry-content img {
   display: block;
   max-width: 100%;
