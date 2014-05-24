@@ -41,7 +41,6 @@
 
 <header role="banner" class="container skeleton-nav">
 	<nav id="menu" class="nav" role="navigation" aria-label="Main Navigation">
-		<h1 class="hidden">[##_title_##]</h1>
 		<a rel="home" href="[##_blog_link_##]" class="nav-brand">[##_title_##]</a>
 		<ul role="menubar">
 		<li role="menuitem" aria-haspopup="true"><a href="/category">Category</a>
@@ -132,55 +131,55 @@
 <!-- Search 
 ================================================== -->
 <s_list>
-<section class="search-list">
+<div class="search-list">
 	<p>'[##_list_conform_##]'에 해당되는 글 [##_list_count_##]건</p>
 	<ol>
 	<s_list_rep>
 	<li>
-	<time class="updated" datetime="[##_list_rep_regdate_##]" pubdate>[##_list_rep_regdate_##]</time>
+	<time class="updated" datetime="[##_list_rep_regdate_##]">[##_list_rep_regdate_##]</time>
 	<a href="[##_list_rep_link_##]">[##_list_rep_title_##]</a>
 	<span class="cnt">[##_list_rep_rp_cnt_##]</span>
 	</li>
 	</s_list_rep>
 	</ol>
-</section>
+</div>
 </s_list>
 
 <s_rplist>
-<section class="search-list">
+<div class="search-list">
 	<p>'[##_rplist_conform_##]'에 해당되는 댓글 [##_rplist_count_##]건</p>    
 	<ol>
 	<s_rplist_rep>
 	<li>
-	<time class="updated" datetime="[##_rplist_rep_regdate_##]" pubdate>[##_rplist_rep_regdate_##]</time>
+	<time class="updated" datetime="[##_rplist_rep_regdate_##]">[##_rplist_rep_regdate_##]</time>
 	<a href="[##_rplist_rep_link_##]">[##_rplist_rep_body_##]</a>
 	<span class="cnt">[##_rplist_rep_rp_cnt_##]</span>
 	<span class="name">[##_rplist_rep_name_##]</span>
 	</li>
 	</s_rplist_rep>
 	</ol>
-</section>
+</div>
 </s_rplist>
 
 <!-- Local
 ================================================== -->
 <s_local>
-<section class="localog">
-	<h3>Localog</h3>
+<div class="localog">
+	<h2>Localog</h2>
 	<s_local_spot_rep>
 	<div class="spot" style="margin-left: [##_local_spot_depth_##]px">[##_local_spot_##]</div>
 	</s_local_spot_rep>
 	<s_local_info_rep>
 	<div class="info" style="margin-left: [##_local_info_depth_##]px"><a href="[##_local_info_link_##]">[##_local_info_title_##]</a></div>
 	</s_local_info_rep>
-</section>
+</div>
 </s_local>
 
 <!-- Tag
 ================================================== -->
 <s_tag>
-<section class="taglog">
-	<h3>Tags</h3>
+<div class="taglog">
+	<h2>Tags</h2>
 	<div class="widget-inline-inner">
 	<ul>
 	<s_tag_rep>
@@ -188,23 +187,23 @@
 	</s_tag_rep>
 	</ul>
 	</div>
-</section>
+</div>
 </s_tag>
 
 <!-- Media
 ================================================== -->
 <s_media>
-<section class="medialog">
-	<h3>Medialog</h3>
+<div class="medialog">
+	<h2>Medialog</h2>
 	[##_media_content_##]
-</section>
+</div>
 </s_media>
 
 <!-- Guestbook
 ================================================== -->
 <s_guest>
-<section class="guestbook global-links">
-	<h3>Guestbook</h3>
+<div class="guestbook global-links">
+	<h2>Guestbook</h2>
 	<s_guest_input_form>
 	<s_guest_member>
 	<s_guest_form>
@@ -267,8 +266,8 @@
 	<s_guest_rep>
 	<li id='[##_guest_rep_id_##]'>
 	<div class="[##_guest_rep_class_##]">
-		<h4><span class="name">[##_guest_rep_name_##]</span> <small><a href="#" onclick="[##_guest_rep_onclick_delete_##]">modify / delete</a> <a href="#" onclick="[##_guest_rep_onclick_reply_##]">reply</a></small></h4>
-		<time class="updated" datetime="[##_guest_rep_date_##]" pubdate>[##_guest_rep_date_##]</time>
+		<p><span class="name">[##_guest_rep_name_##]</span> <small><a href="#" onclick="[##_guest_rep_onclick_delete_##]">modify / delete</a> <a href="#" onclick="[##_guest_rep_onclick_reply_##]">reply</a></small></p>
+		<time class="updated" datetime="[##_guest_rep_date_##]">[##_guest_rep_date_##]</time>
 		<p class="comment-body">[##_guest_rep_desc_##]</p>
 	</div><!-- Guestbook : rep_class -->
                                 
@@ -278,8 +277,8 @@
 		<s_guest_reply_rep>
 			<li id='[##_guest_rep_id_##]'>
 			<div class="[##_guest_rep_class_##]">
-			<h4><small>Reply:</small> <span class="name">[##_guest_rep_name_##]</span> <small><a href="#" onclick="[##_guest_rep_onclick_delete_##]">modify / delete</a></small></h4>
-			<time class="updated" datetime="[##_guest_rep_date_##]" pubdate>[##_guest_rep_date_##]</time>
+			<p><small>Reply:</small> <span class="name">[##_guest_rep_name_##]</span> <small><a href="#" onclick="[##_guest_rep_onclick_delete_##]">modify / delete</a></small></p>
+			<time class="updated" datetime="[##_guest_rep_date_##]">[##_guest_rep_date_##]</time>
 			<p class="comment-body">[##_guest_rep_desc_##]</p>
 			</div><!-- Guestbook : rep_class -->
 			</li>
@@ -291,7 +290,7 @@
 		</s_guest_rep>
 		</ol>
 		</s_guest_container>
-</section>
+</div>
 </s_guest>
 
 <!-- Notice
@@ -299,7 +298,7 @@
 <s_notice_rep>
 <header class="entry-header global-links">
 	<h1 class="entry-title"><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a></h1>
-	<time class="updated" datetime="[##_article_rep_date_##]" pubdate>[##_article_rep_date_##]</time>
+	<time class="updated" datetime="[##_article_rep_date_##]">[##_article_rep_date_##]</time>
 	<p class="byline author vcard">Posted in <strong><a href="[##_blog_link_##]notice">Notice</a></strong>  by <span class="fn">[##_article_rep_author_##]</span></p>
 </header>
 	<div class="entry-content">
@@ -312,7 +311,7 @@
 <s_article_protected>
 <header class="entry-header global-links">
 	<h1 class="entry-title"><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h1>
-	<time class="updated" datetime="[##_article_rep_date_##]" pubdate>[##_article_rep_date_##]</time>
+	<time class="updated" datetime="[##_article_rep_date_##]">[##_article_rep_date_##]</time>
 	<p class="byline author vcard">Posted in <strong><a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a></strong>  by <span class="fn">[##_article_rep_author_##]</span></p>
 </header>
 	<div class="entry-content">
@@ -331,7 +330,7 @@
 ================================================== -->      
 <header class="entry-header global-links">
 	<h1 class="entry-title"><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h1>
-	<time class="updated" datetime="[##_article_rep_date_##]" pubdate>[##_article_rep_date_##]</time>
+	<time class="updated" datetime="[##_article_rep_date_##]">[##_article_rep_date_##]</time>
 	<p class="byline author vcard">Posted in <a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a> by <span class="fn">[##_article_rep_author_##]</span></p>
 </header>
 
@@ -351,54 +350,54 @@
 [##_article_rep_desc_##]
 </div>
 
-<section class="entry-tags global-links">
+<div class="entry-tags global-links">
 <s_tag_label>
 <span class="tags-icon svgicon"></span> [##_tag_label_rep_##]
 </s_tag_label>
-</section>        
+</div>        
 
 <!-- Entry : footer -->
 <div class="entry-footer">
 <!-- Entry : footer : actionTrail
 ================================================== -->
-<section class="actionTrail global-links">
+<div class="actionTrail global-links">
 	<p><span class="trackbacks-icon svgicon"></span> <a href="#tb" onclick="[##_article_rep_tb_link_##]"> Trackback</a> <span class="cnt">[##_article_rep_tb_cnt_##]</span> : <span class="comments-icon svgicon"></span> <a href="#rp" onclick="[##_article_rep_rp_link_##]"> Comment</a> <span class="cnt"> [##_article_rep_rp_cnt_##]</span> 
 	</p>
-</section>
+</div>
 
 <!-- Entry : footer  : trackback
 ================================================== -->
 <s_tb>
-<section class="trackback global-links">
+<div class="trackback global-links">
 	<p>[##_tb_address_##]</p>
 	<s_tb_container>
 	<ol>
 	<s_tb_rep>
 		<li id="[##_tb_rep_id_##]">
-		<h4><small>Subject:</small> <span class="name"><a href="[##_tb_rep_url_##]" onclick="window.open(this.href); return false" rel="external nofollow">[##_tb_rep_title_##]</a></span></h4>
+		<p><small>Subject:</small> <span class="name"><a href="[##_tb_rep_url_##]" onclick="window.open(this.href); return false" rel="external nofollow">[##_tb_rep_title_##]</a></span></p>
 		<p>Tracked from <strong>[##_tb_rep_site_##]</strong>
-		<time class="updated" datetime="[##_tb_rep_date_##]" pubdate>[##_tb_rep_date_##]</time>
+		<time class="updated" datetime="[##_tb_rep_date_##]">[##_tb_rep_date_##]</time>
 		<a href="#void" onclick="[##_tb_rep_onclick_delete_##]; return false" >&nbsp;delete</a></p>
 		<p>[##_tb_rep_desc_##]</p>
 		</li>
 	</s_tb_rep>
 	</ol>
 	</s_tb_container>
-</section>
+</div>
 </s_tb>
 
 <!-- Entry : footer  : comment
 ================================================== -->
 <s_rp>   
-<section class="comment global-links">
+<div class="comment global-links">
 	<s_rp_container>
 	<ol>
 	<s_rp_rep>
 		<li id="[##_rp_rep_id_##]">
 		<div class="[##_rp_rep_class_##]">
-		<h4><span class="name">[##_rp_rep_name_##]</span>
-		 <small><a href="[##_rp_rep_link_##]">address</a> <a href="#" onclick="[##_rp_rep_onclick_delete_##]">modify / delete</a> <a href="#" onclick="[##_rp_rep_onclick_reply_##]">reply</a></small></h4>
-		<time class="updated" datetime="[##_rp_rep_date_##]" pubdate>[##_rp_rep_date_##]</time>
+		<p><span class="name">[##_rp_rep_name_##]</span>
+		 <small><a href="[##_rp_rep_link_##]">address</a> <a href="#" onclick="[##_rp_rep_onclick_delete_##]">modify / delete</a> <a href="#" onclick="[##_rp_rep_onclick_reply_##]">reply</a></small></p>
+		<time class="updated" datetime="[##_rp_rep_date_##]">[##_rp_rep_date_##]</time>
 		<p class="comment-body">[##_rp_rep_desc_##]</p>
 		</div>
 			<div class="reply">
@@ -407,8 +406,8 @@
 			<s_rp2_rep>
 			<li id="[##_rp_rep_id_##]">
 			<div class="[##_rp_rep_class_##]">
-				<h4><small>Reply:</small> <span class="name">[##_rp_rep_name_##]</span> <small><a href="[##_rp_rep_link_##]">address</a> <a href="#" onclick="[##_rp_rep_onclick_delete_##]">modify / delete</a> <a href="#" onclick="[##_rp_rep_onclick_reply_##]">reply</a></small></h4>
-				<time class="updated" datetime="[##_rp_rep_date_##]" pubdate>[##_rp_rep_date_##]</time>
+				<p><small>Reply:</small> <span class="name">[##_rp_rep_name_##]</span> <small><a href="[##_rp_rep_link_##]">address</a> <a href="#" onclick="[##_rp_rep_onclick_delete_##]">modify / delete</a> <a href="#" onclick="[##_rp_rep_onclick_reply_##]">reply</a></small></p>
+				<time class="updated" datetime="[##_rp_rep_date_##]">[##_rp_rep_date_##]</time>
 				<p class="comment-body">[##_rp_rep_desc_##]</p>
 			</div>
 			</li>
@@ -478,7 +477,7 @@
 	</form><!-- Entry : footer : form-horizontal -->
 </s_rp_input_form>
 
-</section><!-- Entry : footer : comment -->
+</div><!-- Entry : footer : comment -->
 </s_rp>
 </div><!-- Entry : footer -->
 </s_article_rep>
@@ -486,7 +485,7 @@
 <!-- Paging
 ================================================== -->  
 <s_paging>
-<section class="paging">
+<div class="paging">
 	<ul class="pagination">
 	<li><a [##_prev_page_##] class="[##_no_more_prev_##]" id="prevPage">&laquo;</a></li>
 	<s_paging_rep>
@@ -494,7 +493,7 @@
 	</s_paging_rep>
 	<li><a [##_next_page_##] class="[##_no_more_next_##]" id="nextPage">&raquo;</a></li>
 	</ul>
-</section>
+</div>
 </s_paging>
 
 </div><!-- /.font utility javascript -->
