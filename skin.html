@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <!--[if IE 7 ]>    <html lang="ko" class="no-js ie7"> <![endif]--> 
 <!--[if IE 8 ]>    <html lang="ko" class="no-js ie8"> <![endif]--> 
 <!--[if IE 9 ]>    <html lang="ko" class="no-js ie9"> <![endif]--> 
@@ -8,9 +8,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="[##_desc_##]">
+	<meta name="keywords" content="your, site, keyword, here">
 	<meta name="author" content="[##_blogger_##]">
 	<meta name="generator" content="markquery on tistory">
-	<title>[##_page_title_##] | [##_title_##]</title>
+	<title>[##_title_##]</title>
 	<link rel="author" href="./images/humans.txt">
 	<link rel="profile" href="http://microformats.org/profile/hcard">
 	<link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]">
@@ -28,11 +29,23 @@
 		<script async src="./images/html5shiv-3.7.0.js"></script>
 		<link href="./images/ie.css" rel="stylesheet">
 	<![endif]-->
+	<!-- Google Analytics Code -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-46277559-1', 'yongwanee.com');
+	  ga('require', 'displayfeatures');
+	  ga('send', 'pageview');
+
+	</script>
 </head>
 <body>
 <s_t3>
-<!--[if lt IE 7]>
-<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.<br>오래된 브라우저를 사용하는 것은 컴퓨터를 안전하지 않게 만듭니다. <a href="http://browsehappy.com/">업그레이드</a> 또는 더 좋은 인터넷 경험을 위해 <a href="http://www.google.com/chromeframe/?redirect=true">크롬</a>을 사용하세요.</p>
+<!--[if lt IE 8]>
+<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.<br>오래된 브라우저를 사용하는 것은 컴퓨터를 안전하지 않게 만듭니다. <a href="http://browsehappy.com/">업그레이드</a> 또는 더 좋은 인터넷 경험을 위해 <a href="http://www.google.com/chromeframe/?redirect=true">크롬</a>을 사용하세요. Windows XP는 2014년 4월 8일 지원 종료됩니다. Microsoft로부터 보안 업데이트 등의 Windows XP 관련 업데이트가 더 이상 제공되지 않습니다.</p>
 <![endif]-->
 
 <a href="#content" class="sr-only">skip to content</a>
@@ -40,15 +53,15 @@
 	<a href="#menu" id="menuLink" class="menu-link"><span></span></a>
 
 <header role="banner" class="container skeleton-nav">
-	<nav id="menu" class="nav" role="navigation" aria-label="Main Navigation">
+	<nav id="menu" class="nav" role="navigation" aria-label="Main menu">
 		<a rel="home" href="[##_blog_link_##]" class="nav-brand">[##_title_##]</a>
 		<ul role="menubar">
-		<li role="menuitem" aria-haspopup="true"><a href="/category">Category</a>
-			<ul role="menu">
-			<li role="presentation"><a role="menuitem" href="/category/book">Book</a></li>
-			<li role="presentation"><a role="menuitem" href="/category/movie">Movie</a></li>
-			<li role="presentation"><a role="menuitem" href="/category/music">Music</a></li>
-			<li role="presentation"><a role="menuitem" href="/category/else">Else</a></li>
+		<li role="menuitem"><a href="/category">Category</a>
+			<ul role="menu" aria-labelledby="dropdown1">
+			<li role="presentation"><a role="menuitem" href="/category/밴쿠버">밴쿠버</a></li>
+			<li role="presentation"><a role="menuitem" href="/category/여행">여행</a></li>
+			<li role="presentation"><a role="menuitem" href="/category/IT">IT</a></li>
+			<li role="presentation"><a role="menuitem" href="/category/노래">노래</a></li>
 			</ul>
 		</li>
 		<li role="menuitem"><a href="/tag">Tags</a></li>
@@ -58,30 +71,33 @@
 	</nav>
 </header><!-- /.container skeleton-nav -->
 
-<div class="container skeleton-header">
+<section class="container skeleton-header">
 <div class="row col-nospace">
 <div class="col-sm-12">
 	<figure class="cover">
-		<figcaption>[##_desc_##]</figcaption>
+		<hgroup>
+		<h1><a title="home" href="[##_blog_link_##]"> 	</a></h1>
+		<h2>[##_desc_##]</h2>
+		</hgroup>
 	</figure>
 </div>
 </div>
-</div><!-- /.container skeleton-header -->
+</section><!-- /.container skeleton-header -->
 
-<div class="container skeleton-mid-banner">
+<section class="container skeleton-mid-banner">
 <div class="row">
 <div class="col-sm-9 mid-content">
 	<div class="row col-nospace">
 		<div class="col-sm-8 social-link">
 			<ul>
-			<li><a href="#" onclick="javascript:getFacebookShare()" target="_blank" class="facebook-link"><span class="facebook-icon svgicon">페이스북 공유 버튼</span></a></li>
-			<li><a href="#" onclick="javascript:getTwitterShare()" target="_blank" class="twitter-link"><span class="twitter-icon svgicon">트위터 공유 버튼</span></a></li>
-			<li><a href="#" onclick="javascript:getGoogleplusShare()" target="_blank" class="google-link"><span class="google-icon svgicon">구글플러스 공유 버튼</span></a></li>
-			<li><a href="#" onclick="javascript:executeURLLink()" class="hidden-md hidden-lg kakaotalk-link"><span class="kakaotalk-icon svgicon">카카오톡 공유 버튼</span></a></li>
-			<li><a href="#" onclick="javascript:executeKakaoStoryLink()" class="hidden-md hidden-lg kakaostory-link"><span class="kakaostory-icon svgicon">카카오스토리 공유 버튼</span></a></li>
+				<li><a href="#" onclick="javascript:window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(document.URL)+'&t='+encodeURIComponent(document.title), 'facebooksharedialog', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" target="_blank" alt="Share on Facebook" class="facebook-link"><span class="facebook-icon svgicon">페이스북 공유 버튼</span></a></li>
+				<li><a href="#" onclick="javascript:window.open('https://twitter.com/share?url='+encodeURIComponent(document.URL)+'&via='+encodeURIComponent(document.title), 'twittersharedialog', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" target="_blank" alt="Share on Twitter" class="twitter-link"><span class="twitter-icon svgicon">트위터 공유 버튼</span></a></li>
+				<li><a href="#" onclick="javascript:window.open('https://plus.google.com/share?url='+encodeURIComponent(document.URL), 'googleplussharedialog','menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=350,width=600');return false;" target="_blank" alt="Share on Google+" class="google-link"><span class="google-icon svgicon">구글플러스 공유 버튼</span></a></li>
+				<li><a href="#" onclick="javascript:executeURLLink()" alt="Share on kakaotalk" class="hidden-md hidden-lg kakaotalk-link"><span class="kakaotalk-icon svgicon">카카오톡 공유 버튼</span></a></li>
+				<li><a href="#" onclick="javascript:executeKakaoStoryLink()" alt="Share on kakaostory" class="hidden-md hidden-lg kakaostory-link"><span class="kakaostory-icon svgicon">카카오스토리 공유 버튼</span></a></li>
 			</ul>
 		</div><!-- /.col-8 -->
-		<div class="col-sm-4 hidden-xs">
+		<div class="col-sm-4">
 			<div class="responsive-right2left">
 			<ul class="list-inline">
 				<li>
@@ -120,7 +136,7 @@
 	</s_sidebar_element>
 </div><!-- /.col mid-aside -->
 </div><!-- /.row -->
-</div><!-- /.container skeleton-mid-banner -->
+</section><!-- /.container skeleton-mid-banner -->
 
 <main role="main" id="content" class="main">
 <div class="container skeleton"><!-- site layout : container --> 
@@ -131,55 +147,55 @@
 <!-- Search 
 ================================================== -->
 <s_list>
-<div class="search-list">
+<section class="search-list">
 	<p>'[##_list_conform_##]'에 해당되는 글 [##_list_count_##]건</p>
 	<ol>
 	<s_list_rep>
 	<li>
-	<time class="updated" datetime="[##_list_rep_regdate_##]">[##_list_rep_regdate_##]</time>
+	<time class="updated" datetime="[##_list_rep_regdate_##]" pubdate>[##_list_rep_regdate_##]</time>
 	<a href="[##_list_rep_link_##]">[##_list_rep_title_##]</a>
 	<span class="cnt">[##_list_rep_rp_cnt_##]</span>
 	</li>
 	</s_list_rep>
 	</ol>
-</div>
+</section>
 </s_list>
 
 <s_rplist>
-<div class="search-list">
+<section class="search-list">
 	<p>'[##_rplist_conform_##]'에 해당되는 댓글 [##_rplist_count_##]건</p>    
 	<ol>
 	<s_rplist_rep>
 	<li>
-	<time class="updated" datetime="[##_rplist_rep_regdate_##]">[##_rplist_rep_regdate_##]</time>
+	<time class="updated" datetime="[##_rplist_rep_regdate_##]" pubdate>[##_rplist_rep_regdate_##]</time>
 	<a href="[##_rplist_rep_link_##]">[##_rplist_rep_body_##]</a>
 	<span class="cnt">[##_rplist_rep_rp_cnt_##]</span>
 	<span class="name">[##_rplist_rep_name_##]</span>
 	</li>
 	</s_rplist_rep>
 	</ol>
-</div>
+</section>
 </s_rplist>
 
 <!-- Local
 ================================================== -->
 <s_local>
-<div class="localog">
-	<h2>Localog</h2>
+<section class="localog">
+	<h3>Localog</h3>
 	<s_local_spot_rep>
 	<div class="spot" style="margin-left: [##_local_spot_depth_##]px">[##_local_spot_##]</div>
 	</s_local_spot_rep>
 	<s_local_info_rep>
 	<div class="info" style="margin-left: [##_local_info_depth_##]px"><a href="[##_local_info_link_##]">[##_local_info_title_##]</a></div>
 	</s_local_info_rep>
-</div>
+</section>
 </s_local>
 
 <!-- Tag
 ================================================== -->
 <s_tag>
-<div class="taglog">
-	<h2>Tags</h2>
+<section class="taglog">
+	<h3>Tags</h3>
 	<div class="widget-inline-inner">
 	<ul>
 	<s_tag_rep>
@@ -187,23 +203,23 @@
 	</s_tag_rep>
 	</ul>
 	</div>
-</div>
+</section>
 </s_tag>
 
 <!-- Media
 ================================================== -->
 <s_media>
-<div class="medialog">
-	<h2>Medialog</h2>
+<section class="medialog">
+	<h3>Medialog</h3>
 	[##_media_content_##]
-</div>
+</section>
 </s_media>
 
 <!-- Guestbook
 ================================================== -->
 <s_guest>
-<div class="guestbook global-links">
-	<h2>Guestbook</h2>
+<section class="guestbook global-links">
+	<h3>Guestbook</h3>
 	<s_guest_input_form>
 	<s_guest_member>
 	<s_guest_form>
@@ -266,8 +282,8 @@
 	<s_guest_rep>
 	<li id='[##_guest_rep_id_##]'>
 	<div class="[##_guest_rep_class_##]">
-		<p><span class="name">[##_guest_rep_name_##]</span> <small><a href="#" onclick="[##_guest_rep_onclick_delete_##]">modify / delete</a> <a href="#" onclick="[##_guest_rep_onclick_reply_##]">reply</a></small></p>
-		<time class="updated" datetime="[##_guest_rep_date_##]">[##_guest_rep_date_##]</time>
+		<h4><span class="name">[##_guest_rep_name_##]</span> <small><a href="#" onclick="[##_guest_rep_onclick_delete_##]">modify / delete</a> <a href="#" onclick="[##_guest_rep_onclick_reply_##]">reply</a></small></h4>
+		<time class="updated" datetime="[##_guest_rep_date_##]" pubdate>[##_guest_rep_date_##]</time>
 		<p class="comment-body">[##_guest_rep_desc_##]</p>
 	</div><!-- Guestbook : rep_class -->
                                 
@@ -277,8 +293,8 @@
 		<s_guest_reply_rep>
 			<li id='[##_guest_rep_id_##]'>
 			<div class="[##_guest_rep_class_##]">
-			<p><small>Reply:</small> <span class="name">[##_guest_rep_name_##]</span> <small><a href="#" onclick="[##_guest_rep_onclick_delete_##]">modify / delete</a></small></p>
-			<time class="updated" datetime="[##_guest_rep_date_##]">[##_guest_rep_date_##]</time>
+			<h4><small>Reply:</small> <span class="name">[##_guest_rep_name_##]</span> <small><a href="#" onclick="[##_guest_rep_onclick_delete_##]">modify / delete</a></small></h4>
+			<time class="updated" datetime="[##_guest_rep_date_##]" pubdate>[##_guest_rep_date_##]</time>
 			<p class="comment-body">[##_guest_rep_desc_##]</p>
 			</div><!-- Guestbook : rep_class -->
 			</li>
@@ -290,7 +306,7 @@
 		</s_guest_rep>
 		</ol>
 		</s_guest_container>
-</div>
+</section>
 </s_guest>
 
 <!-- Notice
@@ -298,7 +314,7 @@
 <s_notice_rep>
 <header class="entry-header global-links">
 	<h1 class="entry-title"><a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a></h1>
-	<time class="updated" datetime="[##_article_rep_date_##]">[##_article_rep_date_##]</time>
+	<time class="updated" datetime="[##_article_rep_date_##]" pubdate>[##_article_rep_date_##]</time>
 	<p class="byline author vcard">Posted in <strong><a href="[##_blog_link_##]notice">Notice</a></strong>  by <span class="fn">[##_article_rep_author_##]</span></p>
 </header>
 	<div class="entry-content">
@@ -311,7 +327,7 @@
 <s_article_protected>
 <header class="entry-header global-links">
 	<h1 class="entry-title"><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h1>
-	<time class="updated" datetime="[##_article_rep_date_##]">[##_article_rep_date_##]</time>
+	<time class="updated" datetime="[##_article_rep_date_##]" pubdate>[##_article_rep_date_##]</time>
 	<p class="byline author vcard">Posted in <strong><a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a></strong>  by <span class="fn">[##_article_rep_author_##]</span></p>
 </header>
 	<div class="entry-content">
@@ -330,7 +346,7 @@
 ================================================== -->      
 <header class="entry-header global-links">
 	<h1 class="entry-title"><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h1>
-	<time class="updated" datetime="[##_article_rep_date_##]">[##_article_rep_date_##]</time>
+	<time class="updated" datetime="[##_article_rep_date_##]" pubdate>[##_article_rep_date_##]</time>
 	<p class="byline author vcard">Posted in <a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a> by <span class="fn">[##_article_rep_author_##]</span></p>
 </header>
 
@@ -350,54 +366,54 @@
 [##_article_rep_desc_##]
 </div>
 
-<div class="entry-tags global-links">
+<section class="entry-tags global-links">
 <s_tag_label>
 <span class="tags-icon svgicon"></span> [##_tag_label_rep_##]
 </s_tag_label>
-</div>        
+</section>        
 
 <!-- Entry : footer -->
 <div class="entry-footer">
 <!-- Entry : footer : actionTrail
 ================================================== -->
-<div class="actionTrail global-links">
+<section class="actionTrail global-links">
 	<p><span class="trackbacks-icon svgicon"></span> <a href="#tb" onclick="[##_article_rep_tb_link_##]"> Trackback</a> <span class="cnt">[##_article_rep_tb_cnt_##]</span> : <span class="comments-icon svgicon"></span> <a href="#rp" onclick="[##_article_rep_rp_link_##]"> Comment</a> <span class="cnt"> [##_article_rep_rp_cnt_##]</span> 
 	</p>
-</div>
+</section>
 
 <!-- Entry : footer  : trackback
 ================================================== -->
 <s_tb>
-<div class="trackback global-links">
+<section class="trackback global-links">
 	<p>[##_tb_address_##]</p>
 	<s_tb_container>
 	<ol>
 	<s_tb_rep>
 		<li id="[##_tb_rep_id_##]">
-		<p><small>Subject:</small> <span class="name"><a href="[##_tb_rep_url_##]" onclick="window.open(this.href); return false" rel="external nofollow">[##_tb_rep_title_##]</a></span></p>
+		<h4><small>Subject:</small> <span class="name"><a href="[##_tb_rep_url_##]" onclick="window.open(this.href); return false" rel="external nofollow">[##_tb_rep_title_##]</a></span></h4>
 		<p>Tracked from <strong>[##_tb_rep_site_##]</strong>
-		<time class="updated" datetime="[##_tb_rep_date_##]">[##_tb_rep_date_##]</time>
+		<time class="updated" datetime="[##_tb_rep_date_##]" pubdate>[##_tb_rep_date_##]</time>
 		<a href="#void" onclick="[##_tb_rep_onclick_delete_##]; return false" >&nbsp;delete</a></p>
 		<p>[##_tb_rep_desc_##]</p>
 		</li>
 	</s_tb_rep>
 	</ol>
 	</s_tb_container>
-</div>
+</section>
 </s_tb>
 
 <!-- Entry : footer  : comment
 ================================================== -->
 <s_rp>   
-<div class="comment global-links">
+<section class="comment global-links">
 	<s_rp_container>
 	<ol>
 	<s_rp_rep>
 		<li id="[##_rp_rep_id_##]">
 		<div class="[##_rp_rep_class_##]">
-		<p><span class="name">[##_rp_rep_name_##]</span>
-		 <small><a href="[##_rp_rep_link_##]">address</a> <a href="#" onclick="[##_rp_rep_onclick_delete_##]">modify / delete</a> <a href="#" onclick="[##_rp_rep_onclick_reply_##]">reply</a></small></p>
-		<time class="updated" datetime="[##_rp_rep_date_##]">[##_rp_rep_date_##]</time>
+		<h4><span class="name">[##_rp_rep_name_##]</span>
+		 <small><a href="[##_rp_rep_link_##]">address</a> <a href="#" onclick="[##_rp_rep_onclick_delete_##]">modify / delete</a> <a href="#" onclick="[##_rp_rep_onclick_reply_##]">reply</a></small></h4>
+		<time class="updated" datetime="[##_rp_rep_date_##]" pubdate>[##_rp_rep_date_##]</time>
 		<p class="comment-body">[##_rp_rep_desc_##]</p>
 		</div>
 			<div class="reply">
@@ -406,8 +422,8 @@
 			<s_rp2_rep>
 			<li id="[##_rp_rep_id_##]">
 			<div class="[##_rp_rep_class_##]">
-				<p><small>Reply:</small> <span class="name">[##_rp_rep_name_##]</span> <small><a href="[##_rp_rep_link_##]">address</a> <a href="#" onclick="[##_rp_rep_onclick_delete_##]">modify / delete</a> <a href="#" onclick="[##_rp_rep_onclick_reply_##]">reply</a></small></p>
-				<time class="updated" datetime="[##_rp_rep_date_##]">[##_rp_rep_date_##]</time>
+				<h4><small>Reply:</small> <span class="name">[##_rp_rep_name_##]</span> <small><a href="[##_rp_rep_link_##]">address</a> <a href="#" onclick="[##_rp_rep_onclick_delete_##]">modify / delete</a> <a href="#" onclick="[##_rp_rep_onclick_reply_##]">reply</a></small></h4>
+				<time class="updated" datetime="[##_rp_rep_date_##]" pubdate>[##_rp_rep_date_##]</time>
 				<p class="comment-body">[##_rp_rep_desc_##]</p>
 			</div>
 			</li>
@@ -477,7 +493,7 @@
 	</form><!-- Entry : footer : form-horizontal -->
 </s_rp_input_form>
 
-</div><!-- Entry : footer : comment -->
+</section><!-- Entry : footer : comment -->
 </s_rp>
 </div><!-- Entry : footer -->
 </s_article_rep>
@@ -485,7 +501,7 @@
 <!-- Paging
 ================================================== -->  
 <s_paging>
-<div class="paging">
+<section class="paging">
 	<ul class="pagination">
 	<li><a [##_prev_page_##] class="[##_no_more_prev_##]" id="prevPage">&laquo;</a></li>
 	<s_paging_rep>
@@ -493,7 +509,7 @@
 	</s_paging_rep>
 	<li><a [##_next_page_##] class="[##_no_more_next_##]" id="nextPage">&raquo;</a></li>
 	</ul>
-</div>
+</section>
 </s_paging>
 
 </div><!-- /.font utility javascript -->
@@ -503,29 +519,29 @@
 <s_sidebar>
 	<s_sidebar_element>
 	<!-- catetories -->
-	<div class="widget">
+	<section class="widget">
 		<div class="widget-inner">
 		<h3>Categories</h3>
 			[##_category_list_##]
 		</div>
-	</div>
+	</section>
 	</s_sidebar_element>
 
 	<s_sidebar_element>
 	<!-- Recent article -->
-	<div class="widget">
+	<section class="widget">
 		<div class="widget-feed-inner">
 		<h3>Recent Articles</h3>
 			<div class="widget-feed"></div>
 		</div>
-	</div>
+	</section>
 	</s_sidebar_element>
 
 	<s_sidebar_element>
-	<!-- Recent article(default) -->
-	<div class="widget">
+	<!-- Recent article (default)-->
+	<section class="widget">
 		<div class="widget-inner">
-		<h3>Recent Articles(default)</h3>
+		<h3>Recent Articles</h3>
 			<ul>
 				<s_rctps_rep>
 				<li>
@@ -534,12 +550,12 @@
 				</s_rctps_rep>
 			</ul>
 		</div>
-	</div>
+	</section>
 	</s_sidebar_element>
 
 	<s_sidebar_element>
 	<!-- Recent comment -->
-	<div class="widget">
+	<section class="widget">
 		<div class="widget-inner">
 		<h3>Recent Comments</h3>
 			<ul>
@@ -550,12 +566,12 @@
 				</s_rctrp_rep>
 			</ul>                         
 		</div>
-	</div>
+	</section>
 	</s_sidebar_element>
 
 	<s_sidebar_element>
 	<!-- Recent Trackback -->
-	<div class="widget">
+	<section class="widget">
 		<div class="widget-inner">
 		<h3>Recent Trackbacks</h3>
 			<ul>
@@ -568,13 +584,13 @@
 				</s_rcttb_rep>
 			</ul>
 		</div>
-	</div>
+	</section>
 	</s_sidebar_element>
 
 	<s_sidebar_element>
 	<!-- Notice list -->
 	<s_rct_notice>
-	<div class="widget">
+	<section class="widget">
 		<div class="widget-inner">
 		<h3>Notice</h3>
 			<ul>
@@ -583,13 +599,13 @@
 				</s_rct_notice_rep>
 			</ul>
 		</div>
-	</div>
+	</section>
 	</s_rct_notice>
 	</s_sidebar_element>
 
 	 <s_sidebar_element>
 	 <!-- Global tags -->
-	<div class="widget">
+	<section class="widget">
 		<div class="widget-inline-inner">
 			<h3>Tag List</h3>
 				<ul>
@@ -598,12 +614,12 @@
 					</s_random_tags>
 				</ul>
 		</div>
-	</div>
+	</section>
 	</s_sidebar_element>
 
 	 <s_sidebar_element>
 	 <!-- Links -->
-	<div class="widget">
+	<section class="widget">
 		<div class="widget-inner">
 		<h3>Links</h3>
 			<ul>
@@ -612,7 +628,7 @@
 				</s_link_rep>
 			</ul>
 		</div>
-	</div>
+	</section>
 	</s_sidebar_element>
 </s_sidebar>
 </aside><!-- site layout : /.aside column  -->
@@ -622,6 +638,17 @@
 
 <footer role="contentinfo">
 <div class="container skeleton-footer">
+	<!-- Google Banner Ad -->
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- Footer Responsive -->
+	<ins class="adsbygoogle"
+		 style="display:block"
+		 data-ad-client="ca-pub-3887691839665321"
+		 data-ad-slot="5702885895"
+		 data-ad-format="auto"></ins>
+	<script>
+	(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
 	<div class="source-org vcard copyright">
 		<!-- http://microformats.org/profile/hcard -->
 		<ul>
@@ -642,7 +669,7 @@
 			<li class="text-muted">&middot;</li>
 			<li><a href="http://github.com/markquery/" target="_blank">GitHub</a></li> 
 			<li class="text-muted">&middot;</li>
-			<li><a rel="license" href="http://markquery.com/license/" target="_blank">License</a></li> 
+			<li><a rel="license" href="http://markquery.github.io/license/" target="_blank">License</a></li> 
 			<li class="text-muted">&middot;</li>
 			<li>Powered by <a href="http://tistory.com/" target="_blank">Tistory</a></li>
 		</ul>
@@ -665,7 +692,7 @@
 <script>
 //<![CDATA[
    jQuery(function($) {
-        $(".widget-feed").rss("http://markquery.com/feed", {
+        $(".widget-feed").rss("http://yongwanee.com/rss/xml", {
           limit: 5,
           effect: 'slideFast',
           layoutTemplate: '<ul class=\"media-list\">{entries}</ul>',
@@ -690,9 +717,6 @@ if (!Modernizr.svg) {
   $(".twitter-icon").css("background-image", "url(./images/twitter-icon.png)");
   $(".google-icon").css("background-image", "url(./images/google-icon.png)");
 }
-function getFacebookShare() { window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(document.URL)+'&t='+encodeURIComponent(document.title), 'facebooksharedialog', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;}
-function getTwitterShare() { window.open('https://twitter.com/share?url='+encodeURIComponent(document.URL)+'&via='+encodeURIComponent(document.title), 'twittersharedialog', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false; }
-function getGoogleplusShare() { window.open('https://plus.google.com/share?url='+encodeURIComponent(document.URL), 'googleplussharedialog','menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=350,width=600');return false; }
 function executeURLLink()
 {
     kakao.link("talk").send({
