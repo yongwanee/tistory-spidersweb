@@ -672,7 +672,7 @@ display: inline-block !important;
   -ms-interpolation-mode:bicubic;
 }
 .entry-content span {
-  display: block;
+  display: inline;
   max-width: 100%!important;
   width:auto\9!important;
   height: auto!important;
